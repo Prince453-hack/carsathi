@@ -129,24 +129,22 @@ export const LoginsForm = ({
   }, [dispatch]);
 
   const handleAmazonSSOLogin = () => {
-    // Get the Amazon SSO login URL from environment variables
-    const clientId = process.env.NEXT_PUBLIC_AMAZON_SSO_CLIENT_ID;
-    const redirectUri = process.env.NEXT_PUBLIC_AMAZON_SSO_REDIRECT_URI;
-    const authUrl = process.env.NEXT_PUBLIC_AMAZON_SSO_AUTH_URL;
-
-    if (!clientId || !redirectUri || !authUrl) {
-      console.error("Missing Amazon SSO configuration");
-      return;
-    }
-
     // Show full screen loading via Hero component
     if (setHeroLoader) {
       setHeroLoader(true);
     }
 
-    const ssoUrl = `${authUrl}?client_id=${clientId}&redirect_uri=${encodeURIComponent(
+    // Build the SSO URL with the correct parameters
+    const authUrl =
+      "https://idp-integ.federate.amazon.com/api/oauth2/v1/authorize";
+    const clientId = "inslpsstpsso-ibs-gtrac";
+    const redirectUri = "https://young.zantatech.com/sso/callback";
+    const scope = "openid";
+    const state = "federateuser";
+
+    const ssoUrl = `${authUrl}?response_type=code&client_id=${clientId}&redirect_uri=${encodeURIComponent(
       redirectUri
-    )}&response_type=code&scope=openid profile email`;
+    )}&scope=${scope}&state=${state}`;
 
     window.location.href = ssoUrl;
   };
