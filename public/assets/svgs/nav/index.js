@@ -1,0 +1,14 @@
+export * as AlertsIcon from '@/public/assets/svgs/nav/alerts.svg';
+export * as DashboardIcon from '@/public/assets/svgs/nav/dashboard.svg';
+export * as ReportsIcon from '@/public/assets/svgs/nav/reports.svg';
+export * as SubUsersIcon from '@/public/assets/svgs/nav/sub-users.svg';
+export * as RawReportIcon from '@/public/assets/svgs/nav/raw.svg';
+export * as VehicleStatusReportIcon from '@/public/assets/svgs/nav/truck.svg';
+export * as CurrentMonthReportIcon from '@/public/assets/svgs/nav/calender.svg';
+export * as TemperatureReportIcon from '@/public/assets/svgs/nav/temperature.svg';
+export * as OldReportsIcon from '@/public/assets/svgs/nav/old-reports.svg';
+export * as MapLive from '@/public/assets/svgs/nav/mapLive.svg';
+export * as POIIcon from '@/public/assets/svgs/nav/poi.svg';
+export * as VehicleListIcon from '@/public/assets/svgs/nav/vehicle-list.svg';
+export * as TripSystemIcon from '@/public/assets/svgs/nav/trip-system.svg';
+export * as AlcoholDrivingIcon from '@/public/assets/svgs/nav/alcohol-driving.svg';
