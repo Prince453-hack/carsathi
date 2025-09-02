@@ -30,16 +30,16 @@ export async function POST(request: NextRequest) {
       decode = {
         payload: {
           aud: "inslpsstpsso-ibs-gtrac",
-          sub: "smunnoli",
+          sub: "hasnen52",
           nbf: 1755691130,
           iss: "https://idp-integ.federate.amazon.com",
           exp: 1755694730,
           federate_token_purpose: "id_token",
-          given_name: "Sudheer",
+          given_name: "Hasnen",
           iat: 1755691130,
-          family_name: "Munnoli",
+          family_name: "Lax",
           jti: "ID.db2e91a1-8b5f-4316-8681-32cb9059d196",
-          email: "smunnoli@amazon.com",
+          email: "hasnen@amazon.com",
         },
       };
 
