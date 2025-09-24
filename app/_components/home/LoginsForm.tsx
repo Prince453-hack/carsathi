@@ -138,7 +138,7 @@ export const LoginsForm = ({
     const authUrl =
       "https://idp-integ.federate.amazon.com/api/oauth2/v1/authorize";
     const clientId = "inslpsstpsso-ibs-gtrac";
-    const redirectUri = "https://young.zantatech.com/sso/callback";
+    const redirectUri = "https://www.itgtelematics.com/";
     const scope = "openid";
     const state = "federateuser";
 
